@@ -19,6 +19,11 @@ module.exports = {
                 loader: require.resolve('babel-loader'),
                 options: {
                     cacheDirectory: true,
+                    plugins: [
+                      'babel-plugin-transform-object-rest-spread',
+                      'babel-plugin-transform-class-properties',
+                      'babel-plugin-transform-runtime'
+                    ],
                     presets: [
                         'babel-preset-es2015',
                         'babel-preset-react'
